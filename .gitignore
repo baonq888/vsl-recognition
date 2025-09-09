@@ -1,0 +1,8 @@
+# Ignore raw and processed data (large / generated files)
+/data/raw/
+/data/processed/
+/data/*.zip
+# Keep data source files (e.g., data/datasets.py) tracked
+# Common ignores
+.DS_Store
+.ipynb_checkpoints/
