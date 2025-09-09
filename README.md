@@ -39,6 +39,13 @@ python -c "from utils.data_utils import create_structured_npy_dataset; import ya
 ```
 *Note: This command assumes you have already extracted your zipped dataset to the path specified in `configs/default.yaml` or that the script can find `data.txt` within `base_data_folder`.*
 
+Download and extract the demo dataset directly into `data/raw/` using:
+
+```bash
+gdown --id 1t-FAYKjZ3rb2wLjS_K3kcSttZtdrz4dB --output data/raw/dataset.zip
+unzip data/raw/dataset.zip -d data/raw/
+```
+
 ### 2. Training the Model
 
 To train the model, run the `train.py` script:
