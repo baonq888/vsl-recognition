@@ -2,46 +2,6 @@
 
 This project implements a Visual Sign Language (VSL) recognition system using a Dual-Attention LSTM model. It processes gloss videos, extracts keypoints using MediaPipe, and trains a deep learning model to classify sign language gestures.
 
-## Project Structure
-
-```
-project_name/
-│── configs/                # Configuration files (YAML/JSON)
-│   └── default.yaml        # Default configuration for data, model, and training
-│
-│── data/                   # Raw + processed data storage
-│   ├── raw/                # Placeholder for raw video data (e.g., zipped files)
-│   ├── processed/          # Placeholder for processed data (e.g., extracted keypoints)
-│   └── datasets.py         # PyTorch Dataset classes for loading keypoint data
-│
-│── models/                 # Model definitions
-│   ├── base_model.py       # (Optional) Base model or abstract classes
-│   └── my_model.py         # Dual-Attention LSTM model implementation
-│
-│── utils/                  # Utility functions
-│   ├── data_utils.py       # Functions for keypoint extraction, augmentation, and NPY dataset creation
-│   ├── train_utils.py      # (Optional) Utilities for training loop (e.g., early stopping, learning rate schedulers)
-│   ├── metrics.py          # (Optional) Custom metrics
-│   ├── logger.py           # (Optional) Logging utilities
-│   └── seed.py             # (Optional) Seeding for reproducibility
-│
-│── trainers/               # Training & evaluation loops
-│   ├── trainer.py          # (Optional) Encapsulates training logic
-│   └── evaluator.py        # (Optional) Encapsulates evaluation logic
-│
-│── scripts/                # Scripts for running experiments
-│   ├── train.py            # Main script to train the VSL recognition model
-│   ├── evaluate.py         # Script to evaluate the trained model on the test set
-│   └── predict.py          # (Optional) Script for making predictions on new data
-│
-│── experiments/            # Save logs, checkpoints, results
-│   ├── runs/               # Training logs, plots (e.g., loss/accuracy curves, confusion matrix)
-│   └── checkpoints/         # Saved model checkpoints (e.g., best_model.pth)
-│
-│── requirements.txt        # Python dependencies
-│── setup.py                # (Optional) Package setup
-│── README.md               # Project documentation
-```
 
 ## Setup Instructions
 
