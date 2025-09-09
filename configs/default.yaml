@@ -1,0 +1,49 @@
+# Data paths
+base_data_folder: 'data/raw/vsl-vocab-demo'
+output_npy_folder: 'data/processed/vsl-vocab-demo_npy'
+labels_file_path: null # Auto-detected
+
+# Pre-processing
+num_augmented_copies: 6
+sequence_length: 30
+num_features: 1662 # This will be recalculated based on landmarks
+
+# Model
+model_save_path: 'experiments/checkpoints/vsl_attention_lstm_model.pth'
+hidden_units: 128
+lstm_layers: 2
+attention_heads: 4
+
+# Training
+learning_rate: 0.0005
+epochs: 160
+batch_size: 8
+
+# Data Split
+train_ratio: 0.60
+val_ratio: 0.20
+test_ratio: 0.20
+
+# Labels
+label_to_int: {
+    'hài_lòng': 0,
+    'kỹ_năng': 1,
+    'súp_lơ': 2,
+    'khuyến_khích': 3,
+    'bánh_tráng': 4,
+    'khả_năng': 5,
+    'nhập_khẩu': 6,
+    'nhân_viên': 7,
+    'hấp_dẫn': 8,
+    'tự_giác': 9,
+    'bún_đậu': 10,
+    'ông_bà': 11,
+    'đầu_tư': 12,
+    'háo_hức': 13,
+    'hữu_nghị': 14,
+    'khởi_nghiệp': 15,
+    'đại_sứ': 16,
+    'quan_sát': 17,
+    'thương_mại': 18,
+    'tương_lai': 19
+}

@@ -1,0 +1,9 @@
+numpy
+opencv-python
+tqdm
+torch
+mediapipe
+scikit-learn
+matplotlib
+PyYAML
+seaborn
